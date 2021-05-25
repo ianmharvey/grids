@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+
+:root {
+  --black:  #333333;
+  --gray75: #666666;
+  --gray50: #999999;
+  --gray25: #cccccc;
+  --gray10: #eaeaea;
+  --white:  #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+	font-size: 62.5%; /*base 10px*/
+}
+
+body {
+  height: 100%;
+  font-family: Lato, sans-serif;
+	font-size: 1.6rem;
+  font-weight: 400;
+	line-height: 1.5;
+	color: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr 10rem;
+  grid-gap: .1rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: .1rem solid var(--gray25);
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  border-top: .1rem solid var(--gray25);
+}
+
+header, main, footer {
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+p {
+  margin: 0 0 2rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {} /*120rem*/
+
+@media (max-width: 1000px) {} /*100rem*/
+
+@media (max-width: 800px) {} /*80rem*/
+
+@media (max-width: 600px) {} /*60rem*/
+</style>
+
+<title>CSS Grid</title>
+
+</head>
+
+<body>
+
+<div class="grid">
+  <header>
+    <div class="container">
+      <p>Header</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <p>Main</p>
+
+      <p>Features a <strong>fixed header</strong>.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at consectetur lorem donec massa sapien faucibus et molestie. Turpis nunc eget lorem dolor sed viverra. A iaculis at erat pellentesque adipiscing commodo elit. Scelerisque eu ultrices vitae auctor eu. Sed enim ut sem viverra. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Dignissim suspendisse in est ante. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus. Mi quis hendrerit dolor magna eget est lorem. Elit at imperdiet dui accumsan sit amet nulla facilisi. Suscipit adipiscing bibendum est ultricies integer quis auctor. A scelerisque purus semper eget duis at tellus at. Sapien eget mi proin sed libero enim sed.</p>
+
+      <p>Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Est pellentesque elit ullamcorper dignissim cras. Odio ut sem nulla pharetra diam sit. Massa placerat duis ultricies lacus sed turpis tincidunt. Aliquam ultrices sagittis orci a scelerisque. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Odio euismod lacinia at quis risus sed vulputate odio ut. Adipiscing commodo elit at imperdiet. Erat pellentesque adipiscing commodo elit. Pellentesque elit ullamcorper dignissim cras tincidunt. Quis imperdiet massa tincidunt nunc pulvinar sapien et. Tellus in metus vulputate eu. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Vulputate ut pharetra sit amet aliquam id. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim.</p>
+
+      <p>Elementum nibh tellus molestie nunc non blandit massa enim nec. Laoreet id donec ultrices tincidunt arcu non. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Lectus quam id leo in. Et leo duis ut diam quam. Blandit aliquam etiam erat velit scelerisque in. Commodo ullamcorper a lacus vestibulum sed arcu. Dictum sit amet justo donec enim diam vulputate ut. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Viverra nibh cras pulvinar mattis nunc sed. Sed lectus vestibulum mattis ullamcorper velit sed. Egestas dui id ornare arcu odio ut sem nulla.</p>
+
+      <p>Eget arcu dictum varius duis at consectetur lorem. Est pellentesque elit ullamcorper dignissim cras tincidunt. Et malesuada fames ac turpis egestas. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Lobortis elementum nibh tellus molestie. Aliquet bibendum enim facilisis gravida neque. Augue mauris augue neque gravida in fermentum et sollicitudin. Vitae suscipit tellus mauris a diam maecenas sed. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At in tellus integer feugiat scelerisque varius morbi enim. Commodo viverra maecenas accumsan lacus vel facilisis. Fusce id velit ut tortor pretium viverra.</p>
+
+      <p>Morbi leo urna molestie at elementum eu. Orci nulla pellentesque dignissim enim sit amet venenatis. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Ac turpis egestas maecenas pharetra. Senectus et netus et malesuada fames ac. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Lectus nulla at volutpat diam ut venenatis. Sed vulputate mi sit amet mauris commodo. Pulvinar sapien et ligula ullamcorper malesuada proin. Et magnis dis parturient montes. Diam quis enim lobortis scelerisque. Nulla malesuada pellentesque elit eget. Donec enim diam vulputate ut pharetra sit amet. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Hendrerit gravida rutrum quisque non tellus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Footer</p>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

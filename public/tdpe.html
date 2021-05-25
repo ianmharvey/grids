@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+:root {
+  --black:  #333333;
+  --gray75: #666666;
+  --gray50: #999999;
+  --gray25: #cccccc;
+  --gray10: #eaeaea;
+  --white:  #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+}
+
+html {
+	font-size: 62.5%; /*base 10px*/
+}
+
+body {
+  font-family: Aladin, sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.5;
+  letter-spacing: .1rem;
+	color: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh;
+}
+
+.grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.time {
+  grid-column: 2;
+  grid-row: 5 / 3;
+}
+
+.duration {
+  grid-column: 4;
+  grid-row: 1 / 5;
+}
+
+.perpetuity {
+  grid-column: 6;
+  grid-row: 2 / 6;
+}
+
+.eternity {
+  grid-column: 8;
+  grid-row: 1 / 6;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1000px) {}
+
+@media (max-width: 800px) {
+  .grid > div > span {
+    font-size: 1.5rem;
+    line-height: normal;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 600px) { }
+</style>
+
+<title>CSS Grid</title>
+
+</head>
+
+<body>
+<div class="grid">
+  <div class="time" title="The world of time (zamán), which is the one that hath both a beginning and an end"><span>Time<br>( Zamán )</span></div>
+  <div class="duration" title="The world of duration (dahr), which hath a beginning, but whose end is not revealed"><span>Duration<br>( Dahr )</span></div>
+  <div class="perpetuity" title="The world of perpetuity (sarmad), whose beginning is not to be seen but which is known to have an end"><span>Perpetuity<br>( Sarmad )</span></div>
+  <div class="eternity" title="The world of eternity (azal), neither a beginning nor an end of which is visible"><span>Eternity<br>( Azal )</span></div>
+</div>
+
+</body>
+</html>

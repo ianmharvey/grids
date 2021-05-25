@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+
+:root {
+  --black:  #333333;
+  --gray75: #666666;
+  --gray50: #999999;
+  --gray25: #cccccc;
+  --gray10: #eaeaea;
+  --white:  #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+	font-size: 62.5%; /*base 10px*/
+}
+
+body {
+  height: 100%;
+  font-family: Lato, sans-serif;
+	font-size: 1.6rem;
+  font-weight: 400;
+	line-height: 1.5;
+	color: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr 10rem;
+  grid-gap: .5rem;
+  height: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header, main, footer {
+  padding: 2rem;
+  border: .1rem solid var(--gray25);
+}
+
+p {
+  margin: 0 0 2rem 0;
+}
+
+@media (max-width: 1200px) {} /*120rem*/
+
+@media (max-width: 1000px) {} /*100rem*/
+
+@media (max-width: 800px) {} /*80rem*/
+
+@media (max-width: 600px) {} /*60rem*/
+</style>
+
+<title>CSS Grid</title>
+
+</head>
+
+<body>
+
+<div class="grid">
+  <header>
+    <p>Header</p>
+  </header>
+
+  <main>
+    <p>Main</p>
+
+    <p>To change the width of <code>.grid</code> simply change the <code>max-width</code> value.</p>
+  </main>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+</div>
+
+</body>
+</html>
